@@ -181,6 +181,7 @@
 #define p4est_vtk_context_t             p8est_vtk_context_t
 #define p4est_file_context_t            p8est_file_context_t
 #define p4est_file_section_metadata_t   p8est_file_section_metadata_t
+#define p4est_simplex_mesh_t            p8est_simplex_mesh_t
 
 /* redefine external variables */
 #define p4est_face_corners              p8est_face_corners
@@ -582,6 +583,16 @@
 #define p4est_lnodes_rank_array_index_int       \
         p8est_lnodes_rank_array_index_int
 #define p4est_lnodes_global_index       p8est_lnodes_global_index
+
+/* functions in p4est_simplex_mesh */
+#define p4est_simplex_mesh_destroy      p8est_simplex_mesh_destroy
+#define p4est_new_simplex_mesh          p8est_new_simplex_mesh
+
+#define p4est_face_center_coords        p8est_face_center_coords
+#define p4est_simplex_mesh_write_gmsh_file \
+        p8est_simplex_mesh_write_gmsh_file
+#define p4est_simplex_mesh_write_vtk_file \
+        p8est_simplex_mesh_write_vtk_file
 
 /* functions in p4est_mesh */
 #define p4est_mesh_memory_used          p8est_mesh_memory_used

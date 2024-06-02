@@ -2894,6 +2894,9 @@ p4est_connectivity_new_byname (const char *name)
   else if (!strcmp (name, "shell2d")) {
     return p4est_connectivity_new_shell2d ();
   }
+  else if (!strcmp (name, "sphere2d")) {
+    return p4est_connectivity_new_shell2d ();
+  }
   else if (!strcmp (name, "disk2d")) {
     return p4est_connectivity_new_disk2d ();
   }
